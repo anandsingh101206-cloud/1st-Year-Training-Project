@@ -2,39 +2,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>C Quiz System</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>C Programming Quiz System</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-  <main class="container">
-    <h1>C Programming Quiz</h1>
-    <p class="subtitle">Test your C programming knowledge</p>
+    <header class="site-header">
+        <div class="brand">C<span>Quiz</span></div>
+        <div class="header-label">PROGRAMMING PRACTICE</div>
+    </header>
 
-    <section id="quiz">
-      <div class="top">
-        <span id="progress">Question 1</span>
-        <span id="score">Score: 0</span>
-      </div>
+    <main class="container">
+        <section class="intro">
+            <p class="eyebrow">TEST YOUR KNOWLEDGE</p>
+            <h1>C Programming Quiz</h1>
+            <p class="subtitle">
+                Challenge yourself with 20 multiple-choice questions.
+            </p>
+        </section>
 
-      <div class="progress-track">
-        <div id="progressBar"></div>
-      </div>
+        <section id="quiz" class="quiz-card">
+            <div class="quiz-info">
+                <span id="progress">Question 1 of 20</span>
+                <span id="score">Score: 0</span>
+            </div>
 
-      <h2 id="question">Question will appear here</h2>
-      <div id="answers"></div>
-      <p id="feedback" aria-live="polite"></p>
-      <button id="nextBtn" disabled>Next Question</button>
-    </section>
+            <div class="progress-track">
+                <div id="progressBar"></div>
+            </div>
 
-    <section id="result" hidden>
-      <h2>Quiz Completed!</h2>
-      <p id="finalScore"></p>
-      <p id="message"></p>
-      <button id="restartBtn">Play Again</button>
-    </section>
-  </main>
+            <h2 id="question">Loading question...</h2>
+
+            <div id="answers" class="answers"></div>
+
+            <p id="feedback" aria-live="polite"></p>
+
+            <button id="nextBtn" disabled>
+                Next Question →
+            </button>
+        </section>
+
+        <section id="result" class="quiz-card result-card" hidden>
+            <div class="result-icon">✓</div>
+            <p class="eyebrow">QUIZ COMPLETED</p>
+            <h2>Your Result</h2>
+            <p id="finalScore" class="final-score"></p>
+            <p id="message"></p>
+
+            <button id="restartBtn">Try Again ↻</button>
+        </section>
+
+        <p class="footer-note">
+            Practice C. Improve every day.
+        </p>
+    </main>
+
+    <footer>
+        <p>© 2026 C Programming Quiz System</p>
+    </footer>
 </body>
 </html>
