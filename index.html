@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C Quiz System</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>C Programming Quiz</h1>
+    <p class="subtitle">Test your C programming knowledge</p>
+
+    <section id="quiz">
+      <div class="top">
+        <span id="progress">Question 1</span>
+        <span id="score">Score: 0</span>
+      </div>
+
+      <div class="progress-track">
+        <div id="progressBar"></div>
+      </div>
+
+      <h2 id="question">Question will appear here</h2>
+      <div id="answers"></div>
+      <p id="feedback" aria-live="polite"></p>
+      <button id="nextBtn" disabled>Next Question</button>
+    </section>
+
+    <section id="result" hidden>
+      <h2>Quiz Completed!</h2>
+      <p id="finalScore"></p>
+      <p id="message"></p>
+      <button id="restartBtn">Play Again</button>
+    </section>
+  </main>
+</body>
+</html>
